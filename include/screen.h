@@ -132,8 +132,8 @@ class Screen
             return 12;
         #elif USE_SCREEN
             return g_pDisplay->fontHeight();
-        #else
-            return 1;
+//        #else
+//            return 1;
         #endif
     }
 
@@ -143,8 +143,8 @@ class Screen
             return g_pDisplay->getStrWidth(psz);
         #elif USE_SCREEN
             return g_pDisplay->textWidth(psz);
-        #elif 
-            return 1;
+//        #elif 
+//            return 1;
         #endif
 
     }
@@ -155,8 +155,8 @@ class Screen
             return g_pDisplay->getDisplayHeight();
         #elif USE_SCREEN
             return g_pDisplay->height();
-        #elif 
-            return 1;
+//        #elif 
+//            return 1;
         #endif
     }
 
